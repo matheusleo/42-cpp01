@@ -1,4 +1,4 @@
-NAME		:= phonebook
+NAME		:= harl
 
 INCLUDES_DIR 		:= ./includes/
 INCLUDES 			:= -I includes
