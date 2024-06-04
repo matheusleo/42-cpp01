@@ -6,21 +6,23 @@
 /*   By: mleonard <mleonard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 11:23:26 by mleonard          #+#    #+#             */
-/*   Updated: 2024/06/04 14:17:40 by mleonard         ###   ########.fr       */
+/*   Updated: 2024/06/04 14:56:43 by mleonard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <Harl.hpp>
 
-int main(int argc, char *argv[])
+int main(void)
 {
-    if (argc != 2)
-    {
-        std::cerr << "Usage: " << argv[0] << " [DEBUG|INFO|WARNING|ERROR]" << std::endl;
-        return 1;
-    }
-
     Harl harl = Harl();
-    harl.complain(argv[1]);
+
+    harl.complain("DEBUG");
+    std::cout << std::endl;
+    harl.complain("INFO");
+    std::cout << std::endl;
+    harl.complain("WARNING");
+    std::cout << std::endl;
+    harl.complain("ERROR");
+
     return 0;
 }
