@@ -1,4 +1,4 @@
-NAME		:= phonebook
+NAME		:= unnecessaryViolence
 
 INCLUDES_DIR 		:= ./includes/
 INCLUDES 			:= -I includes
