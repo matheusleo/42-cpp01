@@ -2,13 +2,13 @@ make
 clear
 
 echo ""
-./harl "DEBUG"
+./harl2.0 "DEBUG"
 echo "---"
-./harl "INFO"
+./harl2.0 "INFO"
 echo "---"
-./harl "WARNING"
+./harl2.0 "WARNING"
 echo "---"
-./harl "ERROR"
+./harl2.0 "ERROR"
 echo "---"
-./harl "UNKOWN"
+./harl2.0 "UNKOWN"
 echo ""

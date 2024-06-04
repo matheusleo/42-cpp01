@@ -1,4 +1,4 @@
-NAME		:= harl
+NAME		:= harl2.0
 
 INCLUDES_DIR 		:= ./includes/
 INCLUDES 			:= -I includes
