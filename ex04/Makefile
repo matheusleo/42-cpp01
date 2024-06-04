@@ -1,4 +1,4 @@
-NAME		:= phonebook
+NAME		:= replaceAll
 
 INCLUDES_DIR 		:= ./includes/
 INCLUDES 			:= -I includes
