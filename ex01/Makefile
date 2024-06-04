@@ -1,4 +1,4 @@
-NAME		:= phonebook
+NAME		:= zombies
 
 INCLUDES_DIR 		:= ./includes/
 INCLUDES 			:= -I includes
