@@ -6,7 +6,7 @@
 /*   By: mleonard <mleonard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 09:06:37 by mleonard          #+#    #+#             */
-/*   Updated: 2024/06/04 09:47:58 by mleonard         ###   ########.fr       */
+/*   Updated: 2024/06/04 09:58:58 by mleonard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     outputFilename.append(".replace");
     std::string inputContent;
 
-    inputFile.open(filename.c_str(), std::ios::in);
+    inputFile.open(filename.c_str());
     if (!inputFile.is_open())
     {
         std::cerr << "Error: Unable to open file '" << filename << "'" << std::endl;
