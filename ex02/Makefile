@@ -1,9 +1,4 @@
-NAME		:= phonebook
-
-INCLUDES_DIR 		:= ./includes/
-INCLUDES 			:= -I includes
-HEADERS				:= *.hpp
-HEADERS_FILES		:= $(addprefix $(INCLUDES_DIR), $(HEADERS))
+NAME		:= HI_THIS_IS_BRAIN
 
 SRC_DIR		:= ./src/
 SRC			:=	*.cpp
@@ -27,12 +22,12 @@ BLUE			:= \033[0;34m
 # Rules
 all:			$(NAME)
 
-$(NAME):		$(SRC_FILES) $(HEADERS_FILES)
-				@$(COMPILE) $(FLAGS) -c $(INCLUDES) $(SRC_FILES)
+$(NAME):		$(SRC_FILES)
+				@$(COMPILE) $(FLAGS) -c $(SRC_FILES)
 				@echo "$(GREEN)Object files created!$(OFF)"
 				@mkdir -p obj
 				@mv $(OBJ) $(OBJ_PATH)
-				@$(COMPILE) $(FLAGS) $(OBJ_FILES) $(INCLUDES) -o $(NAME)
+				@$(COMPILE) $(FLAGS) $(OBJ_FILES) -o $(NAME)
 				@echo "$(GREEN)$(NAME) compiled successfully!"
 
 clean:
